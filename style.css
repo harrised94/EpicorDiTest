@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(57, 63, 72, 0.6);
+    z-index: 2;
+}
+
+.header > h1 {
+    margin: 0;
+}
+
+.wrapper {
+    padding: 30px;
+    background: #fefefe;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 0 15px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 10px 10px 106px -73px rgba(0,0,0,0.75);
+    height: 200px;
+    width: 200px;
+}
+
+.form {
+    position: absolute;
+    left: calc(50% - 150px);
+    top: calc(50% - 200px);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    z-index: 3;
+}
+
+.form > input {
+    margin-bottom: 15px;
+    height: 40px;
+    width: 95%;
+}
+
+.card-buttons {
+    display: flex;
+    margin-top: 30px;
+}
+
+button {
+    background: white;
+    border: none;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+button > .material-symbols-outlined {
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
